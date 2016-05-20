@@ -9,7 +9,7 @@ dd.pensize("5")
 dd.color("hotpink")
 dd.stamp()
 
-'''size=35
+size=35
 for i in range(30):
 	dd.stamp()
 	size+=3
@@ -51,12 +51,32 @@ for i in range(5):
 	size+=50
 #---------------------------------------
 
-'''
+
 dd.penup()
 dd.backward(11)
 dd.pendown()
 dd.backward(50)
 dd.penup()
 dd.backward(11)
+#---------------------------------------
 
+dd.penup()
+dd.forward(150)
+dd.pendown()
+dd.forward(20)
+dd.penup()
+dd.forward(30)'''
+size=30
+for i in range(12):
+	dd.left(size)
+	dd.penup()
+	dd.forward(150)
+	dd.pendown()
+	dd.forward(20)
+	dd.penup()
+	dd.forward(30)
+	dd.stamp()
+	dd.backward(200)
+	
 wn.exitonclick()
+
