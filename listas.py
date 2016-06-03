@@ -1,4 +1,4 @@
-'''def contarPos(L):
+def contarPos(L):
 	pos=0
 	for i in range(len(L)):
 		if L[i]>0:
@@ -41,11 +41,11 @@ if verificar:
 else:
 	print("No")
 print("positivos: ",contarPos(L))
-print("negativos: ",contarNeg(L))'''
+print("negativos: ",contarNeg(L))
 #9
 
 print("------------------------")
-'''
+
 import math 
 def ingresar(L):
 	for i in range(len(L)):
@@ -81,9 +81,9 @@ L=[0]*n
 ingresar(L)
 print("Media= ",media(L))
 print("Varianza= ",varianza(L))
-print ("D.Estandar= ", estandar(L))'''
+print ("D.Estandar= ", estandar(L))
 print("------------------------")
-'''
+
 #11
 print("-------------------------------")
 		
@@ -102,9 +102,9 @@ L=[0]*n
 ingresar(L)
 valor=int(input("valor?: "))
 veces(L,valor)
-print("Cantidad de veces ", veces(L,valor))'''
+print("Cantidad de veces ", veces(L,valor))
 print("------------------------")
-'''
+
 #12
 
 def ingresar(L):
@@ -127,7 +127,6 @@ ingresar(L)
 
 veces(L)
 
-'''
 print("------------------------------------------")
 
 #mejorado 12
@@ -159,7 +158,7 @@ L=[0]*n
 ingresar(L)
 #valor=int(input("valor?: "))
 #veces(L,valor)
-#print("Cantidad de veces ", repetidos(L))'''
+#print("Cantidad de veces ", repetidos(L))
 
 
 print("------------------------------------------")
