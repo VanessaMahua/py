@@ -181,4 +181,36 @@ L=[0]*(n+2)
 ingresar(L,n)
 desplazar(L)
 mostrar(L,n)
-	
+
+print(---------------------------)
+#Ejerccicio 14
+def ingresar(L):
+	for i in range(len(L)):
+		num=int(input("numero "))
+		L[i]=num
+	return L
+def mostrar(L):
+	for i in range(len(L)):
+		print (L[i],end= " ")
+
+def suma(L1,L2,n):
+    lis=[0]*n
+    for i in range(n):
+        lis[i]=L1[i]+L2[i]
+    print("La suma de las listas es : ") 
+    mostrar(lis)
+def multiplicar(L1,L2,n):
+    lis=[0]*n
+    for i in range(n):
+        lis[i]=L1[i]*L2[i]
+    print("\nLa multiplicacion de las listas es : ") 
+    mostrar(lis)
+
+    
+n=int(input("N?: "))
+L=[0]*n
+lista1=ingresar(L)
+print("Ingrese valores para la segunda lista")
+lista2=ingresar(L)
+suma(lista1, lista2,n)
+multiplicar(lista1,lista2,n)
