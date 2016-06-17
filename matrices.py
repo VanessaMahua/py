@@ -78,12 +78,21 @@ def sumaDs(M,n):
 	for i in range(n):
 		s+=M[i][n-i-1]
 	return s
+	
+def sumar(M,N,f,c,s):
+	for i in range(f):
+		for j in range(c):
+			s[i][j]=M[i][j]+N[i][j]
 
 M=[]
+N=[]
+s=[]
 f=int(input("filas?: "))
 c=int(input("columnas?: "))
 for i in range(f):
     M.append([0]*c)
+    N.append([0]*c)
+    s.append([0]*c)
 ingresar (M,f,c)
 mostrar(M,f,c)
 #3
