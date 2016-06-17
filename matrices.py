@@ -49,24 +49,13 @@ def sumaDSecundaria(M,f,c):
         print("Dimensiones incorrectas")
 
 def contornoM(M,f,c):
-    
-      s=0
-      temp=c-1
-      for i in range(f):
-       
-        for j in range(c):
-	    
-            if j==temp or i==j :
-		print("  ")	
-                temp-=1
-		if i==0 or j==0 or j==f-1:
-                    print(M[i][j],end=" ")
-
-            else:
-                
-                print(M[i][j],end=" ")
-        
-        print()
+	for i in range(f):
+		for j in range(c):
+			if i==0 or i==f-1 or j==0 or j==c-1:
+				print(M[i][j],end="\t")
+			else:
+				print(" ",end="\t")
+		print()
       
     
     
