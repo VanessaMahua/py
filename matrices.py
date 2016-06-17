@@ -55,15 +55,19 @@ def contornoM(M,f,c):
       for i in range(f):
        
         for j in range(c):
+	    
             if j==temp or i==j :
-                if i==0:
+                if i==0 or j==0 or j==f-1:
                     print(M[i][j],end=" ")
+		
+			
                 temp-=1
-                print(end=", ")
+
             else:
-                print(M[i][j])
+                
+                print(M[i][j],end=" ")
         
-        print()  
+        print()
       
     
     
