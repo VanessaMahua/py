@@ -83,6 +83,14 @@ def sumar(M,N,f,c,s):
 	for i in range(f):
 		for j in range(c):
 			s[i][j]=M[i][j]+N[i][j]
+#cambia contenido pide  pide x e y  luego mostrar
+def intercambiarFil(M,c,x,y):
+	for i in range(c):
+		aux=M[x][i]
+		M[x][i]=M[y][i]
+		M[y][i]=aux
+
+
 
 M=[]
 N=[]
