@@ -57,8 +57,27 @@ def contornoM(M,f,c):
 				print(" ",end="\t")
 		print()
       
+def letraN(M,n):
+	for i in range(n):
+		for j in range(n):
+			if i==j or j==0 or j==n-1:
+				print(M[i][j],end="\t")
+			else:
+				print(" ",end="\t")
+		print()   
     
-    
+def sumDS(M,n):
+	s=0
+	j=n-1
+	for i in range(n):
+		s+=M[i][j]
+		j-=1
+	return s
+def sumaDs(M,n):
+	s=0
+	for i in range(n):
+		s+=M[i][n-i-1]
+	return s
 
 M=[]
 f=int(input("filas?: "))
